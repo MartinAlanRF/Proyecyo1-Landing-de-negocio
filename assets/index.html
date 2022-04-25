@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Fonts de google -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Audiowide">
     <!-- Framework boostrap 5 -->
     <!--Boostrap 5 css-->
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
@@ -20,7 +22,7 @@
     <!-- Encabezado del Landing del negocio "Mechanical keyboards" -->
     <header>
         <!--Barra de navegación responsive boostrap con un fixed-top hecho en css-->
-        <div class="baarraNavegacion">
+        <div class="container-navBar">
             <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
               <div class="container-fluid">
                 <a class="navbar-brand" href="index.html">Keyboards Af</a>
@@ -92,29 +94,26 @@
         </button>
       </div> -->
       <!-- Pading de 5 con p-5 -->
-      <div class="contenedorJumbotron container-fluid" id="contenedorConImgFondo">
-        <div class="container" >
-            <h1 class="container-fluid">Tienda de teclados</h1>
-            <p>Bienvenidos a la tienda Keyboards MARF.MX </br></p>
-            <p>Aquí podras encontrar el tipo de teclado que se ajuste a tus necesidades, estas en el sitio
-              correcto.
-            </p>
+      <div class="containerJumbotron container-fluid" id="contenedorConImgFondo">
+        <div class="containerJumbotronContent" >
+            <h1>Keyboards MARF.MX</h1>
+            <!-- <p class="textJumbotro">Bienvenidos</br></p> -->
+            <p class="textJumbotro">Aquí podras encontrar el tipo de teclado que se ajuste a tus necesidades.</p>
+            <button>Cotactanos</button>
         </div>
       </div>
 
-      <div class="catalogo">
-        <div class="productos">
-          <div class="card">
-            <img src="./images/teclado lineal.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+      <div class="containerCatalogo">
+        <div class="cotainerProductos container-fluid">
+          <div class="card ">
+            <img src="./images/TecladoMembrana.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
               <div class="card-header">
-                <h5 class="card-title">Teclado con switches lineales</h5>
+                <h5 class="card-title">Teclados hibridos(Memchanical)</h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  Este tipo de switch no tiene nada a lo largo de su recorrido, por lo que sentiremos lo mismo desde que comenzamos a presionar la tecla hasta que tocamos el fondo. 
-                  La dureza de la resistencia no aumenta, no hay escalón por lo que la pulsación es suave y sin “obstáculos”. 
-                  Tampoco se produce sonido en el punto de actuación (cuando se registra la pulsación de la tecla).
+                  Teclado que mezclan la tecnología de los otros dos tipos de teclado. Fusionan lo mejor de la membrana y lo mejor de los teclados mecánicos para rendir muy bien.
                 </p>
               </div>
               <div class="card-footer">
@@ -133,9 +132,8 @@
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  Este tipo de switch no tiene nada a lo largo de su recorrido, por lo que sentiremos lo mismo desde que comenzamos a presionar la tecla hasta que tocamos el fondo. 
-                  La dureza de la resistencia no aumenta, no hay escalón por lo que la pulsación es suave y sin “obstáculos”. 
-                  Tampoco se produce sonido en el punto de actuación (cuando se registra la pulsación de la tecla).
+                  Estos teclados tiene nada a lo largo de su recorrido (no existe retroalimentación), 
+                  por lo que sentiremos lo mismo desde que comenzamos a presionar la tecla hasta que tocamos el fondo. 
                 </p>
               </div>
               <div class="card-footer">
@@ -147,16 +145,15 @@
           </div>
 
           <div class="card">
-            <img src="./images/teclado lineal.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+            <img src="./images/teclado tactil.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
               <div class="card-header">
-                <h5 class="card-title">Teclado con switches lineales</h5>
+                <h5 class="card-title">Teclado con switches tactil</h5>
               </div>
               <div class="card-body">
                 <p class="card-text">
-                  Este tipo de switch no tiene nada a lo largo de su recorrido, por lo que sentiremos lo mismo desde que comenzamos a presionar la tecla hasta que tocamos el fondo. 
-                  La dureza de la resistencia no aumenta, no hay escalón por lo que la pulsación es suave y sin “obstáculos”. 
-                  Tampoco se produce sonido en el punto de actuación (cuando se registra la pulsación de la tecla).
+                  Estos teclados con switches tactiles poseen un pequeño feedback o 
+                  retroalimentación táctil que nos permite saber cuándo se registra la pulsación de la tecla.
                 </p>
               </div>
               <div class="card-footer">
@@ -168,16 +165,13 @@
           </div>
 
           <div class="card">
-            <img src="./images/teclado lineal.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+            <img src="./images/teclado clicky_ruidoso.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
-              <div class="card-header">
-                <h5 class="card-title">Teclado con switches lineales</h5>
-              </div>
               <div class="card-body">
                 <p class="card-text">
-                  Este tipo de switch no tiene nada a lo largo de su recorrido, por lo que sentiremos lo mismo desde que comenzamos a presionar la tecla hasta que tocamos el fondo. 
-                  La dureza de la resistencia no aumenta, no hay escalón por lo que la pulsación es suave y sin “obstáculos”. 
-                  Tampoco se produce sonido en el punto de actuación (cuando se registra la pulsación de la tecla).
+                  <h5 class="card-title">Teclado con switches clicky</h5>
+                  Estos teclados se asemejan a los teclados con swithces tactiles, 
+                  pero además generan un sonido de clic adicional cuando se alcanza el punto de actuación.
                 </p>
               </div>
               <div class="card-footer">

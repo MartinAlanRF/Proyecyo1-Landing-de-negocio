@@ -1,0 +1,20 @@
+/*Este contendor contiene el estilo para dejar la navbar de boostrap en la parte superior 
+de la pagina aunque el usuario haga scroll*/
+.container-navBar{
+    /*Fixed
+    El elemento es removido del flujo normal del documento, sin crearse espacio alguno 
+    para el elemento en el esquema de la página. Es posicionado con relación al bloque contenedor 
+    inicial establecido por el viewport*/
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    /*La propiedad CSS z-index indica el orden de 
+    un elemento posicionado y sus descendientes. Cuando varios elementos se superponen, 
+    los elementos con mayor valor z-index cubren aquellos con menor valor. 
+    
+    Se coloca 1030 porque es el valor que ocupa por defecto boostrap al tomar la navbar fixed
+    de sus ejemplos
+    */
+    z-index: 1030;;
+}

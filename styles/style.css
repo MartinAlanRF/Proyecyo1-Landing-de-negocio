@@ -1,10 +1,30 @@
-.contenedorJumbotron{
+/* Estilo para la fuente de toda la página en el index */
+.body{
+    font-family:'Ubuntu', 'Arial';
+}
+
+/* Estilo para el Jumbotron */
+.containerJumbotron{
+    margin-top: 40px;
     padding: 5px;
     height: 400px;
     background: #000;
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.containerJumbotron .containerJumbotronContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 30px; 
+    /* En el tamaño de la fuente debo de cambiar los tamaños de en pantalla mobiles que sean de 24px y en pantalla grandes 30px */
+}
+
+.containerJumbotron .textJumbotro{
+    text-align: justify;
 }
 
 #contenedorConImgFondo{
@@ -18,8 +38,30 @@
     background-attachment: fixed;
     /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
     background-size: cover;
-
+    color: #fff !important;
 }
+
+.tecladoAnimado{
+    display: flex;
+    width: 300px;
+}
+
+
+/* Estilo para acomodar el catalogo */
+.containerCatalogo{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.cotainerProductos{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
 
 /*Estilo para las card que contienen los albumes/discos */
 /*Estilo modificado para cada card/álbum*/
@@ -27,7 +69,7 @@
     margin: 10px;
     justify-content: center !important;
     align-items: center !important;
-    width: 500px;
+    width: 400px;
     text-align: justify;
 }
 /*Se centra el titulo del card-header*/
@@ -36,5 +78,7 @@
 }
 
 .card .card-img-top{
+    padding: 5px;
     width: 400px;
+    height: 200px;
 }
