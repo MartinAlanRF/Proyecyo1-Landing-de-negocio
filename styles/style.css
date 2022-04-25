@@ -62,9 +62,7 @@
     justify-content: center;
 }
 
-
-/*Estilo para las card que contienen los albumes/discos */
-/*Estilo modificado para cada card/álbum*/
+/* Estilo para las cards que se encuentran dentro del catalago */
 .card{
     margin: 10px;
     justify-content: center !important;
@@ -79,6 +77,36 @@
 
 .card .card-img-top{
     padding: 5px;
-    width: 400px;
     height: 200px;
 }
+
+.containerContacto{
+    background: #212529;
+}
+
+.containerContacto .containerContactoForm{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: #fff;
+    justify-content: center;
+}
+
+.containerContacto .contacto{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.contacto .contactoImg{
+    width: 200px;
+    margin: 10px;
+}
+
+.containerContacto .containerForm{
+    margin: 30px;
+}
+
+
