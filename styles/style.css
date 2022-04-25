@@ -1,0 +1,40 @@
+.contenedorJumbotron{
+    padding: 5px;
+    height: 400px;
+    background: #000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorConImgFondo{
+    /* Para colocar una imagen como fondo de mi jumbotron */
+    background-image: url('/assets/images/teclado.jpg');
+    /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
+    background-position: center center;
+    /* Esto es para que la imagen de fondo del contenedor no se repita */
+    background-repeat: no-repeat;
+    /* La imagen se fija en la ventana de visualización para que la altura de la imagen no supere a la del contenido */
+    background-attachment: fixed;
+    /* La imagen de fondo se reescala automáticamente con el cambio del ancho de ventana del navegador */
+    background-size: cover;
+
+}
+
+/*Estilo para las card que contienen los albumes/discos */
+/*Estilo modificado para cada card/álbum*/
+.card{
+    margin: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 500px;
+    text-align: justify;
+}
+/*Se centra el titulo del card-header*/
+.card .card-header{
+    text-align: center;
+}
+
+.card .card-img-top{
+    width: 400px;
+}
