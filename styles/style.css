@@ -62,6 +62,11 @@
     justify-content: center;
 }
 
+/*  */
+.containerDemoSwitches{
+    overflow: hidden;
+}
+
 /* Estilo para las cards que se encuentran dentro del catalago */
 .card{
     margin: 10px;

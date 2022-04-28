@@ -43,15 +43,15 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                   <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                      <a class="nav-link active" aria-current="page" href="#">
+                      <a class="nav-link" href="#">¿Quiénes somos?</a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link"  href="#Catalago">
                         Catalogo
                       </a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">¿Quiénes somos?</a>
-                    </li>
-                    <li class="nav-item">
-                      <a class="nav-link" href="#">Contacto</a>
+                      <a class="nav-link" href="#Contactanos">Contacto</a>
                     </li>
                   </ul>
                   <div class="LogSig">
@@ -79,10 +79,10 @@
         </div>
       </div>
 
-      <div class="containerCatalogo">
+      <div id="Catalago" class="containerCatalogo">
         <div class="cotainerProductos container-fluid">
           <div class="card ">
-            <img src="./images/TecladoMembrana.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+            <img src="./images/catalogo/TecladoMembrana.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
               <div class="card-header">
                 <h5 class="card-title">Teclados hibridos(Memchanical)</h5>
@@ -93,7 +93,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="./Discos/discoDetalles.html" class="btn btn-primary">
+                <a href="#" class="btn btn-primary">
                   Ver datos
                   </a>
               </div>
@@ -101,7 +101,7 @@
           </div>
 
           <div class="card">
-            <img src="./images/teclado lineal.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+            <img src="./images/catalogo/teclado lineal.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
               <div class="card-header">
                 <h5 class="card-title">Teclado con switches lineales</h5>
@@ -113,7 +113,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="./Discos/discoDetalles.html" class="btn btn-primary">
+                <a href="#" class="btn btn-primary">
                   Ver datos
                   </a>
               </div>
@@ -121,7 +121,7 @@
           </div>
 
           <div class="card">
-            <img src="./images/teclado tactil.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+            <img src="./images/catalogo/teclado tactil.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
               <div class="card-header">
                 <h5 class="card-title">Teclado con switches tactil</h5>
@@ -133,7 +133,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="./Discos/discoDetalles.html" class="btn btn-primary">
+                <a href="#" class="btn btn-primary">
                   Ver datos
                   </a>
               </div>
@@ -141,7 +141,7 @@
           </div>
 
           <div class="card">
-            <img src="./images/teclado clicky_ruidoso.jpg" class="card-img-top" alt="Teclado switch lineal"/>
+            <img src="./images/catalogo/teclado clicky_ruidoso.jpg" class="card-img-top" alt="Teclado switch lineal"/>
             <div class="card-body">
               <div class="card-body">
                 <p class="card-text">
@@ -151,7 +151,7 @@
                 </p>
               </div>
               <div class="card-footer">
-                <a href="./Discos/discoDetalles.html" class="btn btn-primary">
+                <a href="#" class="btn btn-primary">
                   Ver datos
                   </a>
               </div>
@@ -161,48 +161,76 @@
         </div>
       </div>
 
-      <div class="containerContacto">
+      <!-- <div class="containerDemoSwitches">
+
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="./images/carrusel/linealGif.gif" class="d-block w-20" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/carrusel/tactilGif.gif" class="d-block w-20" alt="...">
+            </div>
+            <div class="carousel-item">
+              <img src="./images/carrusel/clickyGif.gif" class="d-block w-20" alt="...">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+
+      </div> -->
+
+      <div id="Contactanos" class="containerContacto">
         <div class="containerContactoForm">
 
           <div class="contacto">
-            <img class="contactoImg" src="./images/email-13770.png" alt="Correo electrónico">
+            <img class="contactoImg" src="./images/contacto/email-13770.png" alt="Correo electrónico">
           </div>
 
           <div class="containerForm">
             <h1>Contactanos</h1>
+            <!-- Formulario de contacto para los usuarios -->
+            <!-- Grip de 3 -->
             <form class="row g-3">
-              <!-- Campos para el nombre y apellido del usuario para ponerse en contacto -->
+              <!-- Label y input nombre  -->
               <div class="col-md-6">
                 <label for="nombre" class="form-label">Nombre</label>
                 <input type="text" class="form-control" id="nombre">
               </div>
+              <!-- Label y input apellidos  -->
               <div class="col-md-6">
                 <label for="apellidos" class="form-label">Apellidos</label>
                 <input type="text" class="form-control" id="apellidos">
               </div>
+              <!-- Label y input para correo electrónico  -->
               <div class="col-md-8">
                 <label for="emailInfo" class="form-label">Correo electrónico</label>
                 <input type="email" class="form-control" id="emailInfo">
               </div>
+              <!-- Label y input para su numero celular  -->
               <div class="col-md-4">
                 <label for="numTelefonico" class="form-label">Num. Celular</label>
                 <input type="email" class="form-control" id="numTelefonico">
               </div>
+              <!-- Text area para que el usuario coloque el mensaje para la tienda -->
               <div class="col-md-12">
                 <label for="mensaje" class="form-label">Mensaje:</label>
                 <textarea class="form-control" id="mensaje" rows="4"></textarea>
               </div>
-  
+              <!-- Boton para enviar el contenido del formulario -->
               <div class="col-md-12">
                 <button type="submit" class="btn btn-primary col-md-12">Enviar</button>
               </div>
             </form>
           </div>
         </div>
-      </div>
-
-      <div>
-        
       </div>
 
     </main>
