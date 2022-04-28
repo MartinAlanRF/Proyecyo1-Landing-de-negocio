@@ -29,7 +29,7 @@
 
 #contenedorConImgFondo{
     /* Para colocar una imagen como fondo de mi jumbotron */
-    background-image: url('/assets/images/teclado.jpg');
+    background-image: url('/images/teclado.jpg');
     /* Para dejar la imagen de fondo centrada, vertical y horizontalmente */
     background-position: center center;
     /* Esto es para que la imagen de fondo del contenedor no se repita */
@@ -115,3 +115,75 @@
 }
 
 
+/* medidas */
+
+/* 
+@media (max-width:1280px) {
+
+
+
+}
+
+
+
+
+
+/* Size web */
+
+@media (min-width: 1280px) and (max-width: 1440px) {
+
+
+
+}
+
+
+
+/* Size tablet */
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+
+}
+
+
+
+/* Size tablet-landscape */
+
+@media (min-width: 991px) and (max-width: 1280px) {
+
+
+
+}
+
+
+
+/* Size tablet-max-width */
+
+@media (max-width: 991px) {
+
+
+
+}
+
+
+
+
+
+/* Size mobile */
+
+@media (max-width: 478px) {
+
+
+
+}
+
+
+
+/* Size mobile-landscape */
+
+@media (max-width: 850px) and (orientation: landscape) {
+
+
+
+} */
