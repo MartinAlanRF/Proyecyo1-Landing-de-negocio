@@ -41,11 +41,6 @@
     color: #fff !important;
 }
 
-.tecladoAnimado{
-    display: flex;
-    width: 300px;
-}
-
 /* Estilo para acomodar el catalogo */
 .containerCatalogo{
     display: flex;
@@ -72,9 +67,23 @@
     align-items: center;
     text-align: justify;
     background-image: url('/images/catalogo/tecladoMembrana.jpg');
-    background-size: cover; 
-    color: #fff;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; 
 }
+/* 
+Estilo para difuminar la imagen de fondo del contenedor del telcado membrana 
+.membrana::before{
+    content: '';
+    position: absolute;
+    background: #000;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} */
+
 
 .lineal{
     margin: 20px;
@@ -85,7 +94,8 @@
     align-items: center;
     text-align: justify;
     background-image: url('/images/catalogo/tecladolineal.jpg');
-    background-size: cover; 
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: #fff;
 }
 
@@ -98,7 +108,8 @@
     align-items: center;
     text-align: justify;
     background-image: url('/images/catalogo/tecladotactil.jpg');
-    background-size: cover; 
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: #fff;
 }
 
@@ -111,18 +122,20 @@
     align-items: center;
     text-align: justify;
     background-image: url('/images/catalogo/tecladoclicky_ruidoso.jpg');
-    background-size: cover; 
+    background-size: cover;
+    background-repeat: no-repeat; 
     color: #fff;
 }
 
 .tituloContainer{
     text-align: center;
     font-weight: bolder;
+    color: #fff;
 }
 
 .infoText{
     text-align: justify;
-    font-weight: bolder;
+    color: #fff;
 }
 
 /* Apartado de contact */
