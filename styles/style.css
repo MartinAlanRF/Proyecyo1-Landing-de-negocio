@@ -3,10 +3,6 @@
     font-family:'Ubuntu', 'Arial';
 }
 
-.logo{
-
-}
-
 /* Estilo para el Jumbotron */
 .containerJumbotron{
     margin-top: 40px;
@@ -50,7 +46,6 @@
     width: 300px;
 }
 
-
 /* Estilo para acomodar el catalogo */
 .containerCatalogo{
     display: flex;
@@ -64,31 +59,73 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-}
-
-/*  */
-.containerDemoSwitches{
     overflow: hidden;
 }
 
-/* Estilo para las cards que se encuentran dentro del catalago */
-.card{
-    margin: 10px;
-    justify-content: center !important;
-    align-items: center !important;
+/* Estilos para los contenedores que mostraran el catalogo */
+.membrana{
+    margin: 20px;
     width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     text-align: justify;
+    background-image: url('/images/catalogo/tecladoMembrana.jpg');
+    background-size: cover; 
+    color: #fff;
 }
-/*Se centra el titulo del card-header*/
-.card .card-header{
+
+.lineal{
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-image: url('/images/catalogo/tecladolineal.jpg');
+    background-size: cover; 
+    color: #fff;
+}
+
+.tactil{
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-image: url('/images/catalogo/tecladotactil.jpg');
+    background-size: cover; 
+    color: #fff;
+}
+
+.clicky{
+    margin: 20px;
+    width: 400px;
+    height: 300px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    background-image: url('/images/catalogo/tecladoclicky_ruidoso.jpg');
+    background-size: cover; 
+    color: #fff;
+}
+
+.tituloContainer{
     text-align: center;
+    font-weight: bolder;
 }
 
-.card .card-img-top{
-    padding: 5px;
-    height: 200px;
+.infoText{
+    text-align: justify;
+    font-weight: bolder;
 }
 
+/* Apartado de contact */
 .containerContacto{
     background: #fff;
 }
@@ -136,6 +173,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: justify;
     margin: 10px;
     padding: 5px;
 }
@@ -163,3 +201,63 @@
     margin: 10px;
     padding: 5px;
 }
+
+/*Medidas de pantalla acomodando el contenido respecto a estas*/
+@media only screen and (max-width: 1200px) and (min-width: 980px) { 
+     /*Al tener menos de 1200px en patanlla se cambiar el flexdirection de row a colum  */
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;
+    }
+    
+  }  
+
+
+/* Para 960px */  
+@media only screen and (max-width: 980px) and (min-width: 821px) {  
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;
+    }
+    
+  }  
+    
+   
+  @media only screen and (max-width: 820px) and (min-width: 621px) {  
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;
+    }
+  }  
+    
+  
+  @media only screen and (max-width: 620px) and (min-width: 501px) {  
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;
+    }
+  }  
+  
+  
+  /* Para 480px */  
+  @media only screen and (max-width: 500px) and (min-width: 341px) {  
+    .footer{
+        display: flex;
+        flex-direction: column;
+        align-items: center;    
+        justify-content: space-around;
+    }
+  }  
+    
+  /* Para 320px */  
+  @media only screen and (max-width: 340px) and (min-width: 5px)  {  
+
+  } 
