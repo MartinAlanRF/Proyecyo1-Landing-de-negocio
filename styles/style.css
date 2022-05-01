@@ -41,8 +41,30 @@
     color: #fff !important;
 }
 
+/* Estilo del carrusel para los tipos de swithches */
+#swithches{
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+
+.card-img{
+    width: 400px;
+}
+
+.card{
+    margin: 10px;
+    justify-content: center !important;
+    align-items: center !important;
+    width: 400px;
+    text-align: justify;
+}
+
 /* Estilo para acomodar el catalogo */
 .containerCatalogo{
+    margin: 20px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -57,6 +79,7 @@
     overflow: hidden;
 }
 
+
 /* Estilos para los contenedores que mostraran el catalogo */
 .membrana{
     margin: 20px;
@@ -66,23 +89,23 @@
     justify-content: center;
     align-items: center;
     text-align: justify;
-    background-image: url('/images/catalogo/tecladoMembrana.jpg');
+    background-image: url('/images/catalogo/tecladoMembrana1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     position: relative; 
 }
 /* 
-Estilo para difuminar la imagen de fondo del contenedor del telcado membrana 
+Estilo para difuminar la imagen de fondo del contenedor del telcado membrana */
 .membrana::before{
     content: '';
     position: absolute;
-    background: #000;
+    background: #3a3535a6;
     opacity: 0.4;
     top: 0;
     bottom: 0;
     left: 0;
     right: 0;
-} */
+} 
 
 
 .lineal{
@@ -96,8 +119,21 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
     background-image: url('/images/catalogo/tecladolineal.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
-    color: #fff;
+    position: relative; 
 }
+
+.lineal::before{
+    content: '';
+    position: absolute;
+    background: #3a3535a6;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+
+
 
 .tactil{
     margin: 20px;
@@ -110,8 +146,19 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
     background-image: url('/images/catalogo/tecladotactil.jpg');
     background-size: cover;
     background-repeat: no-repeat; 
-    color: #fff;
+    position: relative; 
 }
+
+.tactil::before{
+    content: '';
+    position: absolute;
+    background: #3a3535a6;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
 
 .clicky{
     margin: 20px;
@@ -123,19 +170,32 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
     text-align: justify;
     background-image: url('/images/catalogo/tecladoclicky_ruidoso.jpg');
     background-size: cover;
-    background-repeat: no-repeat; 
-    color: #fff;
+    background-repeat: no-repeat;
+    position: relative;  
 }
 
+.clicky::before{
+    content: '';
+    position: absolute;
+    background: #3a3535a6;
+    opacity: 0.4;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+} 
+
+/* Estilo para darle color a los contenedores del catalgo */
 .tituloContainer{
     text-align: center;
     font-weight: bolder;
-    color: #fff;
+    color: #ffffff;
 }
-
+/* Estilo para darle color al texto de los contenedores del catalgo */
 .infoText{
     text-align: justify;
-    color: #fff;
+    font-weight: bolder;
+    color: #ffffff;
 }
 
 /* Apartado de contact */
@@ -218,7 +278,19 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
 /*Medidas de pantalla acomodando el contenido respecto a estas*/
 @media only screen and (max-width: 1200px) and (min-width: 980px) { 
      /*Al tener menos de 1200px en patanlla se cambiar el flexdirection de row a colum  */
-    .footer{
+     .card-img{
+        width: 200px;
+    }
+    
+    .card{
+        margin: 10px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 200px;
+        text-align: justify;
+    }
+  
+     .footer{
         display: flex;
         flex-direction: column;
         align-items: center;    
@@ -230,6 +302,17 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
 
 /* Para 960px */  
 @media only screen and (max-width: 980px) and (min-width: 821px) {  
+    .card-img{
+        width: 200px;
+    }
+    
+    .card{
+        margin: 10px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 200px;
+        text-align: justify;
+    }
     .footer{
         display: flex;
         flex-direction: column;
@@ -241,6 +324,18 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
     
    
   @media only screen and (max-width: 820px) and (min-width: 621px) {  
+
+    .card-img{
+        width: 200px;
+    }
+    
+    .card{
+        margin: 10px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 200px;
+        text-align: justify;
+    }
     .footer{
         display: flex;
         flex-direction: column;
@@ -251,6 +346,18 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
     
   
   @media only screen and (max-width: 620px) and (min-width: 501px) {  
+    .card-img{
+        width: 200px;
+    }
+    
+    .card{
+        margin: 10px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 200px;
+        text-align: justify;
+    }
+
     .footer{
         display: flex;
         flex-direction: column;
@@ -262,6 +369,18 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
   
   /* Para 480px */  
   @media only screen and (max-width: 500px) and (min-width: 341px) {  
+        
+    .card-img{
+        width: 200px;
+    }
+    
+    .card{
+        margin: 10px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 200px;
+        text-align: justify;
+    }
     .footer{
         display: flex;
         flex-direction: column;
@@ -272,5 +391,21 @@ Estilo para difuminar la imagen de fondo del contenedor del telcado membrana
     
   /* Para 320px */  
   @media only screen and (max-width: 340px) and (min-width: 5px)  {  
-
+    .card-img{
+        width: 200px;
+    }
+    
+    .card{
+        margin: 10px;
+        justify-content: center !important;
+        align-items: center !important;
+        width: 200px;
+        text-align: justify;
+    }
+        .footer{
+            display: flex;
+            flex-direction: column;
+            align-items: center;    
+            justify-content: space-around;
+        }
   } 
