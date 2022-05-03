@@ -1,0 +1,312 @@
+/* Estilo para la fuente de toda la página en el index */
+body {
+    font-family: 'Ubuntu', 'Arial';
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+main {
+    margin-bottom: 20px;
+}
+
+.contenedor-main {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* background: wheat; */
+}
+
+.userPicture {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgPerfil {
+    width: 200px;
+}
+
+/* Se le da formato al formulario en general */
+form {
+    background: #2125298c;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+/* Al contenedor con la etiqueta form se le da un with del 100% */
+/* .form{
+    width: 100%;
+} */
+
+.form>h1 {
+    text-align: center;
+    padding-top: 20px;
+    font-weight: bolder;
+}
+
+/* A los div(contendores) que tengan la clase gruo se les da un  margen y una posion relativa */
+form .grupo {
+    position: relative;
+    margin: 45px;
+}
+
+/* Estilo para los inputs del formulario 
+    color de fuente
+    tamaño de la misma
+    Se les quita el borde
+    Pero solo se deja el borde de abajo para que se vea una linea tipo "libreta"
+    
+    'display: block'
+    El elemento es mostrado como un elemento block, o sea como los párrafos o encabezados siempre fueron mostrados.
+    Un elemento block siempre tiene algo de espacio por encima y debajo, que lo separa de los demás elementos, y no acepta ningún otro elemento a su lado 
+    - si no está indicado de otra manera (float).
+*/
+input {
+    background: none;
+    color: #22242c;
+    font-size: 20px;
+    padding: 10px 10px 10px 5px;
+    display: block;
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #000;
+}
+
+/* Estilo para quitar el borde que se hace al darle click a los inputs
+y darle un color a la fuente dentro de estos  */
+input:focus {
+    outline: none;
+    color: rgb(255, 255, 255);
+}
+
+/* Para darle color al label del input */
+label {
+    color: #ffffff;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 5px;
+    top: 10px;
+    transition: 0.5s ease all;
+    /* Para que no tenga eventos del mouse el label */
+    pointer-events: none;
+}
+
+/* El sigo ~ se usa como selector hermano
+cuando se active el focus en el input del formulario
+este activa el estilo que se de para su hermano en este caso label 
+haciendo que se salga del input con un top negativo  
+
+El validade hace uso de la etiqueta require que se le coloco a los inputs dentro del formulario
+y este valida si es correcto dependiendo de su type. ejemplo type="email", type="text", etc.
+En caso de que ese no sea cumplido el label regresa a su posición original dentro del input
+*/
+input:focus~label,
+input:valid~label {
+    top: -14px;
+    font-size: 18px;
+    color: #000;
+}
+
+/* Estilo para el contenedor(div) del boton 
+    Se le dieron propiedades para que este este al centro de su cotenedor
+    padre
+*/
+.contBoton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Estilo para darle color al fondo, a la fuente y al mismo tiempo darle un tamaño */
+.boton {
+    background: #fff;
+    color: #000;
+    /* Este lo coloco para quitar el color del borde de boton */
+    border-color: transparent;
+    border-radius: 10px;
+    font-size: 20px;
+    width: 50%;
+}
+
+/*Estilo para que cuando el usuario pase el mouse por encima del boton
+este cambie de color*/
+.boton:hover {
+    background: #026efa;
+}
+
+/* Estilo para que cuando el usuario le de click en el boton el color del texto cambie */
+.boton:focus {
+    color: #fff;
+}
+
+/* Estilo footer ecommerce */
+
+/* Se le da un margin top auto para mantener este siempre debajo debido a que en el body se le dio la propiedad flex del mismo */
+#Footer {
+    margin-top: auto;
+}
+
+.footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.logoFooter .logoWeb {
+    width: 160px;
+}
+
+.footer .aboutUs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: justify;
+    margin: 10px;
+    padding: 5px;
+}
+
+.aboutUs li:hover {
+    color: #0983fd;
+}
+
+.footer .socialMedia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+.socialMedia li:hover {
+    color: #0983fd;
+}
+
+.footer .location {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+    padding: 5px;
+}
+
+/*Medidas de pantalla acomodando el contenido respecto a estas*/
+@media only screen and (max-width: 1200px) and (min-width: 980px) {
+
+    /* Nota para el form apartirn de los 500px agrega que el margen del .grupo y de .form sea de 30 20 */
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+
+/* Para 960px */
+@media only screen and (max-width: 980px) and (min-width: 821px) {
+
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+}
+
+
+@media only screen and (max-width: 820px) and (min-width: 621px) {
+
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+@media only screen and (max-width: 620px) and (min-width: 501px) {
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+
+/* Para 480px */
+@media only screen and (max-width: 500px) and (min-width: 341px) {
+    form {
+        padding: 25px;
+    }
+
+    form .grupo {
+        position: relative;
+        margin: 30px;
+    }
+
+    /*  */
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
+
+/* Para 320px */
+@media only screen and (max-width: 340px) and (min-width: 5px) {
+    form{
+        padding: 25px;
+    }
+
+    form .grupo{
+        position: relative;
+        margin: 30px;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+}
